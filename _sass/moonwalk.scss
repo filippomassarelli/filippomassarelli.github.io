@@ -3,6 +3,10 @@
 
 html { height: 100%; }
 
+footer {
+  padding-top: 1.5em;
+}
+
 body {
   font-family:  "Inter", -apple-system, "avenir next", avenir, roboto, noto, ubuntu, "helvetica neue", helvetica, sans-serif;
   font-size: 1.0rem;
@@ -70,6 +74,8 @@ html {
     --text: #374151;
     --text-secondary: #6b7280;
     --links: #6366f1;
+    // --links: #1098F7;
+    // --highlight: #B8CDF8; // light yellow
     --highlight: #FFECB2; // light yellow
     --code-text: #9D174D;
     --share-text: #999;
@@ -114,6 +120,7 @@ blockquote {
 }
 a {
   color: var(--links);
+  text-decoration: none
 }
 *:target { background-color: var(--bg-secondary); }
 
@@ -165,8 +172,11 @@ mark {
 .home-date {
   font-family: "Roboto Mono", "Courier New", monospace;
 }
-.post-list-item a {
-  text-decoration: none;
+.post-list-item {
+  list-style-type: none;
+  a {
+    text-decoration: none;
+  }
 }
 .text-bold {
   font-weight: bold;
